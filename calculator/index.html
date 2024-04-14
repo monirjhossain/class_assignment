@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostad Calculator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-center mt-5">Ostad Calculator</h1>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="form-group">
+          <input type="number" id="number1" class="form-control" placeholder="Enter first number">
+        </div>
+        <div class="form-group">
+          <input type="number" id="number2" class="form-control" placeholder="Enter second number">
+        </div>
+        <div class="form-group">
+          <select id="operate" class="form-control">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (/)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button onclick="logic()" class="btn btn-primary btn-block">Calculate</button>
+        </div>
+        <div id="result" class="alert alert-success" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
